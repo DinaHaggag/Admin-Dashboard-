@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr ;
+    grid-template-rows: 1fr 4fr ;
+    font-family: "robot";
+}
+
+
+/* sidebar */
+.sidebar{
+    grid-area: 1 / 1 / 4 / 2 ;
+    background-color: #0ea5e9;
+    padding-left: 20px;
+    padding-top: 15px;
+    color: white;
+
+}
+.logo{
+    padding-bottom: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+.navigation {
+    padding-right: 30px;
+    padding-bottom: 30px;
+    
+}
+.navigation li{
+    display: flex;
+    align-items: center;
+   padding-bottom: 10px;
+   padding-left: 10px;
+   cursor: pointer;
+}
+.navigation h4{
+    padding-left: 10px;
+}
+
+.branding {
+    padding-right: 30px;
+    padding-bottom: 30px;
+    
+}
+.branding li{
+    display: flex;
+    align-items: center;
+   padding-bottom: 10px;
+   padding-left: 10px;
+   cursor: pointer;
+}
+.branding h4{
+    padding-left: 10px;
+}
+
+
+
+
+
+.header{
+    grid-area: 1 / 2 / 2 / 4;
+    background-color: white;
+}
+
+.main-content{
+    grid-area: 2 /2 /4 /4 ;
+    background-color: #e2e8f0;
+}
+
+
+/* header */
+.contain{
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 10px;
+   
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-icon{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.search-icon input{
+    background-color: #e2e8f0;
+    width: 330px;
+    border: none;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+}
+.search-icon svg{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.bell img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.bell{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+.bell h4{
+    padding-left: 10px;
+}
+.bell svg{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.hi img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.hi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user{
+    display: flex;
+    align-items: center;
+
+}
+.hi-u p{
+    font-size: 13px;
+    font-weight: bold;
+}
+button{
+    background-color:#0284c7 ;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    width: 70px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* main content */
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    column-gap: 15px;
+    padding: 15px 10px 30px 25px;
+}
+#paragrphs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(3,1fr);
+    column-gap: 15px;
+    row-gap: 20px;
+
+}
+.your-projects{
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+.your-projects h3{
+    padding-bottom: 15px;
+}
+.a-t{
+    grid-column-start:7;
+    grid-column-end: 9;
+}
+
+#paragrphs div{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    border-left: 7px solid #f97316;
+    height: 220px;
+    position: relative;
+}
+.icons{
+   position: absolute;
+   top: 80%;
+   right: 10%;
+}
+.icons svg {
+    margin-left: 10px;
+}
+.announcements h3{
+    padding-bottom: 15px;
+}
+.an {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.an div {
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.an :last-child{
+    border-bottom:none;
+}
+.an h5 {
+    font-size: 15px;
+}
+.trending{
+    padding-top: 20px;
+}
+.trending-users{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.trending-users div{
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.trending h3{
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+.trending img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
